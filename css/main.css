@@ -1,0 +1,116 @@
+/*
+#2b2b2b
+#dc3d24
+*/
+
+/* CSS Resetter */
+*{ 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box;
+  font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* common styles */
+.container{
+  width: 960px;
+  margin: 0 auto;
+}
+.btop{ 
+  border-top: 20px solid #dc3d24;
+  background-color: #2b2b2b;
+  color: #fff;
+}
+.bbot{ 
+  border-bottom: 20px solid #dc3d24;
+  background-color: #2b2b2b;
+  color: #fff;
+}
+h1,h2,h3,h4{ font-weight: 100; text-transform: uppercase;}
+
+/* Page Styles */
+header{
+  overflow: auto;
+}
+  header h2{
+    float: left;
+    line-height: 55px;
+  }
+  header nav{
+    float: right;
+  }
+  header nav li{
+    list-style-type: none;
+    background-color: #dc3d24;
+    width: 120px;
+    height: 55px;
+    line-height: 55px;
+    display: inline-block;
+    margin-left: 10px;
+    text-align: center;
+  }
+  header nav li a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+  }
+  header nav li a:hover{
+    background-color: #a1200c;
+  }
+
+main{
+  overflow: auto;
+  padding: 20px 0;
+}
+  main section{
+    width: 550px;
+    float: left;
+    
+  }
+    main section h1{
+      margin-bottom: 20px;
+    }
+    main section figure{
+      margin-bottom: 20px;
+    }
+    main section figure img{
+      width: 100%;
+      height: auto;
+    }
+    main section figure:hover figcaption{color:#5a5a5a}
+    main section h3{
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      border-bottom: 3px solid #dc3d24;
+    }
+    main section p{
+      margin-bottom: 10px;
+    }
+    main section article{
+      color: #686868;
+      border-left: 2px dashed gray;
+      padding-left: 10px;
+    }
+    main section article h3{
+      border:none; padding: 0;margin: 0; font-weight: bold;
+    }
+
+  main aside{
+    width: 390px;
+    padding: 15px;
+    float: right;
+    margin-bottom: 20px;
+  }
+    main aside h4{
+      font-weight: bold;
+      text-transform: uppercase;  
+    }
+    main aside form{
+      width: 100%!important;
+    }
+
+footer{
+  height: 100px;
+  line-height: 80px;
+  text-align: center;
+}

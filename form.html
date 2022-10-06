@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+  <form action="">
+    <fieldset>
+      <legend>Step 1 : Your Details</legend>
+      <label>Name : <input type="text" name="fn" placeholder="Full name"></label>
+      <label>Email : <input type="email" name="em"></label>
+      <label>Phone : <input type="text" name="tel"></label>
+    </fieldset>
+    <fieldset>
+      <legend>Step 2 : Delivery Address</legend>
+      <label>Address : 
+        <textarea name="add" cols="30" rows="5"></textarea>
+      </label>
+      <label>Postal Code : <input type="text" name="pc" pattern="[0-9]{5}-[0-9]{5}"></label>
+      <label>Country : <input type="text" name="cntry"></label>
+    </fieldset>
+    <fieldset>
+      <legend>Step 3 : Card Details</legend>
+      <label>Card Type : <br>
+        <input type="radio" name="ctype" value="visa" class="iradio"> <img src="images/visa.jpg"> Visa
+        <input type="radio" name="ctype" value="amex" class="iradio"> <img src="images/amex.jpg"> AmEx
+        <input type="radio" name="ctype" value="master" class="iradio"> <img src="images/master.jpg"> Master
+      </label>
+      <label>Card Number : <input type="datetime-local" name="cno"></label>
+      <label>Security Code : <input type="text" name="scon"></label>
+      <label>Name on Card: <input type="text" name="ncard"></label>
+    </fieldset>
+    <input type="submit" id="submit" value="BUY IT!">
+  </form>
+</body>
+</html>
